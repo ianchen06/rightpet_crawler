@@ -1,4 +1,7 @@
 #!/usr/bin/env python
 import requests
 
-print("Hello world")
+url = "http://api.ipify.org"
+resp = requests.get(url)
+print(resp.text)
+
